@@ -1,0 +1,7 @@
+SELECT S.Ename "Employee Name"
+FROM SALESPERSONS S
+WHERE EmpID NOT IN
+ (
+ SELECT EmpID 
+ FROM ORDERS 
+ );
